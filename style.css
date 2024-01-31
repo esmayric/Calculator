@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+#equals{
+  grid-area: 5/3/5/5;
+  width: 130px;
+  border-radius: 42%;
+}
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-width: 270px;
+  margin: auto;
+  background-color: #000;
+  width: 300px;
+  margin-top: 200px;
+  padding: 20px;
+  border-radius: 10px; /* You can adjust this if you want rounded corners for the entire calculator */
+}
+
+button {
+  font-size: 150%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border: none; /* Remove the border property */
+  border-radius: 50%; /* Make it a circle */
+}
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+input {
+  grid-column: span 4;
+  padding: 15px;
+  padding-right: 20px;
+  font-size: 50px;
+  text-align: right;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: calc(100% - 20px); /* Bu satırı ekledim */
+  box-sizing: border-box;
+}
+.number{
+  background-color: #424242 !important;
+  color: #fff !important;
+}
+.dark-grey {
+  background-color: #424242 !important;
+  color: #fff !important;
+}
+
+.calculator button {
+  grid-column: span 1;
+}
+
+.wide {
+  grid-column: span 2;
+  padding: 15px;
+}
+.operation {
+  background-color: #fbc02d;
+  color: #ffffff;
+}.del{
+  font-size: 100%;
+}
+
+
